@@ -32,5 +32,8 @@ class ZmiennePraktyka {
         iloscProduktow = - iloscProduktow;
         System.out.println(iloscProduktow);
 
+        boolean dodatnia = iloscProduktow>0;
+        System.out.println("Liczba dodatnia: " + dodatnia  );
+
     }
 }
