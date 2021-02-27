@@ -1,0 +1,5 @@
+package wyswietlanie;
+
+class Hello {
+
+}
