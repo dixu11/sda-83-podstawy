@@ -24,5 +24,8 @@ class LiteralyOmowienie {
 
 
         System.out.println("Cena bułek: " + (0.5 + 1.07) +"zł");
+
+
+        System.out.println(Math.pow(15,2));
     }
 }
