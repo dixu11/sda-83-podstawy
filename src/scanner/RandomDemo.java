@@ -11,5 +11,8 @@ class RandomDemo {
         wylosowana = wylosowana +1; // 1 do 5
 
         System.out.println(wylosowana);
+
+        System.out.println(random.nextDouble()); // 0.0 do 1.0
+        System.out.println(random.nextBoolean());
     }
 }
