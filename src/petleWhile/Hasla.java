@@ -9,7 +9,7 @@ class Hasla {
         do {
             System.out.println("Podaj hasło");
             podaneHaslo = scanner.nextLine();
-        } while (   !podaneHaslo.equals("abcd") );
+        } while ( !podaneHaslo.equals("abcd") );
         System.out.println("Java jest spoko");
 
     }
