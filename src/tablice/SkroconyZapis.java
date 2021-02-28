@@ -9,6 +9,8 @@ class SkroconyZapis {
 
         //double[] ceny2 = new double[]{1.99,0.99,3.99}; // skrocony zapis
         double[] ceny2 = {1.99,0.99,3.99}; // skrocony zapis
+        char[] litery = {'J','A','V','A'};
+
 
         System.out.println(ceny[1]);
         System.out.println(ceny2[1]);
