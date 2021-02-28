@@ -10,7 +10,7 @@ class Market {
         System.out.println("Ile kg chcesz kupić? Nie więcej niż " + iloscTruskawek);
         Scanner scanner = new Scanner(System.in);
         double iloscKupiona = scanner.nextDouble();
-        if(iloscKupiona>iloscTruskawek){
+        if (iloscKupiona > iloscTruskawek) {
             System.out.println("Nie mamy tyle truskawek");
             System.exit(1);
 //            return;
@@ -19,7 +19,7 @@ class Market {
         System.out.println("Do zapłaty: " + doZaplaty + "zł");
         System.out.println("Ile płacisz?");
         double kwotaZaplacona = scanner.nextDouble();
-        if(doZaplaty >=kwotaZaplacona){
+        if (doZaplaty >= kwotaZaplacona) {
             System.out.println("Nie stać Cię");
             return;
         }
@@ -27,7 +27,5 @@ class Market {
         System.out.println("Twoja reszta to : " + reszta + "zł");
         iloscTruskawek -= iloscKupiona;
         System.out.println("W sklepie pozostało: " + iloscTruskawek + "kg truskawek");
-
-
     }
 }
