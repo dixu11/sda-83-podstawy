@@ -22,7 +22,5 @@ class RzutyKostkami {
 
         System.out.println("Suma wylosowanych: " + suma);
         System.out.println("Program trafił 6 po takiej ilości rzutów: " + iloscRzutow);
-
-
     }
 }
