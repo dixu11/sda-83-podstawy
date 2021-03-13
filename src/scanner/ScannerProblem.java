@@ -16,8 +16,6 @@ public class ScannerProblem {
 
         System.out.println("Ilość: " + ilosc);
         System.out.println("Gatunek: " + gatunek);
-
     }
-
 
 }
