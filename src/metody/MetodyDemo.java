@@ -52,6 +52,4 @@ public class MetodyDemo {
         System.out.println("Umyj naczynia po gościach :)");
     }
 
-
-
 }
