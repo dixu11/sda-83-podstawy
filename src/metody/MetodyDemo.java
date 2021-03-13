@@ -47,7 +47,7 @@ public class MetodyDemo {
         System.out.println("Dodać smietany");
     }
 
-    public static void zakonczenie(){
+    private static void zakonczenie(){
         System.out.println("smacznego!");
         System.out.println("Umyj naczynia po gościach :)");
     }
