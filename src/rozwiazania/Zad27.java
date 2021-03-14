@@ -5,7 +5,7 @@ import pola.PolaDemo;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Zad26 {
+public class Zad27 {
 
     /*Wykonaj następujące zadania:
     Wyświetl piątą potęgę liczby 2 wykorzystując bibliotekę Math.
