@@ -22,9 +22,6 @@ public class Zad25 {
         System.out.println(wynik);
         int milisekundy =(int) konwertujNaMilisekundy(5,10);
         System.out.println(milisekundy);
-
-
-
     }
 
     public static double poteguj(double liczbaPotegowana, int potega){

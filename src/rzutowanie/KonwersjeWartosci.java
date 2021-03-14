@@ -10,6 +10,7 @@ public class KonwersjeWartosci {
         long liczbaLong = 8_444_333_220_145_456_546L;  // 8 bajtów - 64 bit
         float zmiennoprzecinkowaFloat = 3.456789923456789F;  // 4 bajty
         double zmiennoprzecinkowaDouble = 3.456789923456789; // 8 bajtów
+
         System.out.println(zmiennoprzecinkowaFloat);
         System.out.println(zmiennoprzecinkowaDouble);
 
