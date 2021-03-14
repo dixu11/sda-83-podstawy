@@ -1,5 +1,7 @@
 package rozwiazania;
 
+import pola.PolaDemo;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
