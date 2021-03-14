@@ -5,7 +5,11 @@ import java.util.Scanner;
 
 public class Projekt2Loteria {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        zagrajWLoterie();
+    }
+
+   public static void zagrajWLoterie() {
 //        Symulator loterii liczbowej:
 //        wprowadzenie 6 liczb (1-24)
 //        wylosowanie 6 liczb (1-24)

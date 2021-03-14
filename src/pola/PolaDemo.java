@@ -8,13 +8,23 @@ public class PolaDemo {
 
 
     public static void main(String[] args) {
-        System.out.println(haslo); // pole jeszcze nie ustawione - null
+        System.out.println(haslo); // domyslnie null
+
+
 //        int liczba;
 //        System.out.println(liczba); // zmienna lokalna(w metodzie) nie ustawiona -> błąd, nie da się wyświetlić
-        generujHaslo();
+       generujHaslo();
         System.out.println("Ustawiam hasło, hasło ustawione " + haslo);
         wyswietlZakodowaneHaslo();
         sprawdzCzyZgadlem();
+
+
+        haslo = "abcd";
+        String haslo = "Inne powiedzenie...";
+
+
+        System.out.println(haslo); // zmienna lokalna "haslo" przyslonila pole -> stad uzyjemy zmiennej
+        System.out.println(PolaDemo.haslo); // wymuszamy uzycie pola poprzez wskazanie na składową statyczna klasy
     }
 
     public static void generujHaslo() {
