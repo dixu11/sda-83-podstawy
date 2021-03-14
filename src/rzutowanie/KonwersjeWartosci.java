@@ -35,6 +35,18 @@ public class KonwersjeWartosci {
         System.out.println(indexLitery);
         char konwersja = (char)liczbaInt2;
         System.out.println(konwersja);
+        System.out.println("----");
+        double zmiennoPrzecinkowyDouble = 3.545243789993423499999;
+        int zmiennoPrzecinkowyDouble2 = (int)zmiennoPrzecinkowyDouble;
+        System.out.println(zmiennoPrzecinkowyDouble2);
+        short mojShort = 32002;
+        byte liczbaShort2 = (byte)mojShort;
+        System.out.println(liczbaShort2);
+        int mojInt = 1_434_343_432;
+        char mojInt2 = (char)mojInt;
+        System.out.println(mojInt2);
+
+
 
     }
 
