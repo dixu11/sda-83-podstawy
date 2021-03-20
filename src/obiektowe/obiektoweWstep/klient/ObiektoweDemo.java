@@ -17,16 +17,16 @@ public class ObiektoweDemo {
 
         //Klient.wyswietlDane(); // wywołanie metody statycznej
 
-        Klient klient1 = new Klient();
-        Klient klient2 = new Klient();
-        Klient klient3 = new Klient();
+        Klient klient1 = new Klient("kowalski@gmail.com","marian123",3);
+        Klient klient2 = new Klient("zofia@interia.pl","assdgdf", 10);
+        Klient klient3 = new Klient("aaa@bbb.cc","asasdsd", 5);
 
 
         System.out.println(klient1);
         System.out.println(klient2);
         System.out.println(klient3);
 
-        klient1.mail = "kowalski@gmail.com";
+       /* klient1.mail = "kowalski@gmail.com";
         klient1.haslo = "marian123";
         klient1.punkty = 3;
 
@@ -36,7 +36,7 @@ public class ObiektoweDemo {
 
         klient3.mail = "aaa@bbb.cc";
         klient3.haslo = "asasdsd";
-        klient3.punkty = 5;
+        klient3.punkty = 5;*/
 
         System.out.println(klient1.mail);
         System.out.println(klient2.mail);

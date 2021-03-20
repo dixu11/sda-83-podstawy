@@ -7,6 +7,13 @@ public class Klient {
   public  String haslo;
   public  int punkty;
 
+    //konstruktory
+    public Klient(String startowyMail, String startoweHaslo, int startowePunkty) {
+        mail = startowyMail;
+        haslo = startoweHaslo;
+        punkty = startowePunkty;
+    }
+
     //zachowania
     public void wyswietlDane() {
         System.out.println("Dane klienta:");
