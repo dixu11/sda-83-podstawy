@@ -50,17 +50,7 @@ public class ObiektoweDemo {
         klient1.wyswietlDane();
 
 
-       /*
-        roznice:
-        zmienne proste:
-             z małej litery, tylko 8
-             przechowują proste dane (z ograniczeniem pamięci)
 
-        zmienne referencyjne:
-            z dużej litery (od nazwy klasy) - nieskończenie wiele
-            przechowują adres obiektu (tworzone przez 'new')
-            można wywoływać na nich metody
-        */
     }
 
 }

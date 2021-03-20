@@ -3,9 +3,9 @@ package obiektowe.obiektoweWstep.klient;
 //szablon do tworzenia obiektów klientów
 public class Klient {
     //cechy
-    String mail;
-    String haslo;
-    int punkty;
+  public  String mail;
+  public  String haslo;
+  public  int punkty;
 
     //zachowania
     public void wyswietlDane() {
