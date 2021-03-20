@@ -1,4 +1,4 @@
-package rozwiazania.zad24;
+package rozwiazania.zad34;
 
 public class SamochodDemo {
 
@@ -27,13 +27,13 @@ public class SamochodDemo {
 
 
     public static void main(String[] args) {
-        Samochod samochod1 = new Samochod();
-        samochod1.marka = "BMW";
-        samochod1.przebieg = 0;
+        Samochod samochod1 = new Samochod("BMW");
+//        samochod1.marka = "BMW";
+//        samochod1.przebieg = 0;
 
-        Samochod samochod2 = new Samochod();
-        samochod2.marka = "Tesla";
-        samochod2.przebieg = 0;
+        Samochod samochod2 = new Samochod("TESLA");
+//        samochod2.marka = "Tesla";
+//        samochod2.przebieg = 0;
 
         samochod1.wyswietl();
         samochod2.wyswietl();
