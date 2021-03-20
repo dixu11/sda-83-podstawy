@@ -2,9 +2,9 @@ package obiektowe.serwisy;
 
 public class Produkt {
     //cechy
-    String nazwa;
-    int ilosc;
-    double cena;
+   private String nazwa;
+   private int ilosc;
+   private double cena;
 
     //konstruktory
    /* public Produkt(){ //bez typu zwracanego, nazwa taka jak klasa
@@ -38,6 +38,10 @@ public class Produkt {
 
     public String toString(){
        return "Nazwa: " + nazwa + " ilość: " + ilosc + " cena: " + dajLacznaCene();
+    }
+
+    public String getNazwa(){
+        return nazwa;
     }
 
 }

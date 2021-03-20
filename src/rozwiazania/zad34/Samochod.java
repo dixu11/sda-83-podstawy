@@ -2,9 +2,9 @@ package rozwiazania.zad34;
 
 public class Samochod {
     //cechy
-   public String marka;
-   public int przebieg;
-   public int coIlePrzeglad =20_000;
+   private String marka;
+   private int przebieg;
+   private int coIlePrzeglad =20_000;
 
     //konstruktory
     public Samochod(String startowaMarka){
@@ -35,4 +35,13 @@ public class Samochod {
         return "Marka: " + marka + " przebieg: " + przebieg;
     }
 
+    //getter
+    public int getCoIlePrzeglad(){ // pozwa odczytać wartość zmiennej "coIlePrzeglad" z innej klasy
+        return coIlePrzeglad;
+    }
+
+    //setter
+    public void setCoIlePrzeglad(int nowyCoIlePrzeglad){ // pozwa zmienić wartość zmiennej "coIlePrzeglad" z innej klasy
+        coIlePrzeglad = nowyCoIlePrzeglad;
+    }
 }

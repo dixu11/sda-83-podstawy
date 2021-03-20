@@ -7,9 +7,9 @@ public class Magazyn {
         double darmowaWysylkaOd = 50; // darmowa wysylka od 50 zl
         for(Produkt produkt: produkty){
             if(produkt.dajLacznaCene() >darmowaWysylkaOd){
-                System.out.println("Darmowa wysyła przy: " +produkt.nazwa);
+                System.out.println("Darmowa wysyła przy: " +produkt.getNazwa());
             }else {
-                System.out.println("Zwiekszam cene " + produkt.nazwa + " do: ");
+                System.out.println("Zwiekszam cene " + produkt.getNazwa()+ " do: ");
                 System.out.println("Doliczam 10 zł");
             }
         }

@@ -1,4 +1,4 @@
-package rozwiazania.zad38;
+package rozwiazania.zad38enkapsulacja;
 
 import rozwiazania.zad34.Samochod;
 
@@ -19,7 +19,7 @@ public class SamochodSerwis {
     }
 
     public void sprawdzPrzeglady(Samochod twojSamochod) {
-        System.out.println("Do przegladu przy: " + twojSamochod.coIlePrzeglad + " km");
+        System.out.println("Do przegladu przy: " + twojSamochod.getCoIlePrzeglad() + " km");
         if (twojSamochod.ileDoPrzegladu() > 0) {
             System.out.println("Do przeglądu zostało : " + twojSamochod.ileDoPrzegladu());
         } else {
@@ -29,9 +29,8 @@ public class SamochodSerwis {
 
     public void zrobPrzeglad(Samochod samochod){
         System.out.println("Robie przegląd samochodu");
-        int ileDoPrzegladu = samochod.coIlePrzeglad;
-        samochod.coIlePrzeglad = ileDoPrzegladu* 2;
+        int ileDoPrzegladu = samochod.getCoIlePrzeglad();
+        samochod.setCoIlePrzeglad(ileDoPrzegladu* 2);
     }
-
-
 }
+

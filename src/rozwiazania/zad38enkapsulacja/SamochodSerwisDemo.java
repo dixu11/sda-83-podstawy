@@ -1,8 +1,6 @@
-package rozwiazania.zad38;
+package rozwiazania.zad38enkapsulacja;
 
 import rozwiazania.zad34.Samochod;
-
-import java.util.Scanner;
 
 public class SamochodSerwisDemo {
 
@@ -30,7 +28,7 @@ public class SamochodSerwisDemo {
         serwis.zrobPrzeglad(zbudowanySamochod);
         serwis.sprawdzPrzeglady(zbudowanySamochod);
 
-
+        //hermetyzacja / enkapsulacja
 
 
 
