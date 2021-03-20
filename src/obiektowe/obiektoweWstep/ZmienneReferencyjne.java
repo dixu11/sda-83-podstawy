@@ -13,7 +13,7 @@ public class ZmienneReferencyjne {
         String zmiennaReferencyjna2 = "Abcd";
         String zmiennaReferencyjna3 = new String("abcd");
         int[] zmiennaReferencyjna4 = new int[5];
-        Klient klient1 = new Klient();
+        Klient klient1 = new Klient("a@a.pl","123",2);
         // Klient.mail = "abc@gmail.com"; // dostęp statyczny przez klasę
 
         //Klient.wyswietlDane(); // wywołanie metody statycznej
@@ -40,13 +40,8 @@ public class ZmienneReferencyjne {
         System.out.println(pusty3.toUpperCase());
         System.out.println(pusty4.toUpperCase());
 
-        Klient klient2 = new Klient(); // null oznacza brak obiektu
+        Klient klient2 = new Klient( "kowalski@gmail.com","marian123",10); // null oznacza brak obiektu
         System.out.println(klient2);
-
-
-        klient2.mail = "kowalski@gmail.com";
-        klient2.haslo = "marian123";
-        klient2.punkty = 3;
         klient2.wyswietlDane();
 
         if (klient2.mail != null) { // przykład zabezpieczenia przed nullem
