@@ -30,6 +30,7 @@ public class CarDemo {
 
         System.out.println("Przygotowuję obiekt samochód...");
         Car customCar = new Car(brand,mileage); // tworzę obiekt z przekazanych danych
+
         System.out.println(customCar);
         double mileageToOverview = customCar.howManyToOverview();
         if ( mileageToOverview> 0) {
