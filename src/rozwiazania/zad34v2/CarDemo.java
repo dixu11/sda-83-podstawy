@@ -22,28 +22,29 @@ public class CarDemo {
         System.out.println(car.howManyToOverview());
         System.out.println(car2.howManyToOverview());
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj markę");
-        String brand = scanner.nextLine();
-        System.out.println("Podaj przebieg");
-        double mileage = scanner.nextDouble();
-
-        System.out.println("Przygotowuję obiekt samochód...");
-        Car customCar = new Car(brand,mileage); // tworzę obiekt z przekazanych danych
-
+        CarService carService = new CarService();
+      Car customCar =  carService.buildCar();
+        carService.checkOverview( customCar );
+        carService.doOverview(customCar);
         System.out.println(customCar);
-        double mileageToOverview = customCar.howManyToOverview();
-        if ( mileageToOverview> 0) {
-            System.out.println("Wykonaj przegląd dla samochodu marki "
-                    + customCar.brand + " za " + mileageToOverview + " km");
-        } else {
-            System.out.println("Przegląd trzeba było zrobić " +
-                    -mileageToOverview + "km temu!");
-            // zmiana znaku na przeciwny -> '-' przed zmienną
-        }
+        carService.checkOverview(customCar);
+
 
     }
 }
+
+//ENKAPSULACJA // HERMETYZACJA
+//Do cech obiektów mamy dostęp wyłącznie przez metody.
+//Ich cechy powinny być ukryte przed resztą klas
+
+//private -> tylko ta klasa
+//package-default -> ta klasa i ten pakiet
+//protected -> jw. + klasy dziedziczące
+//public -> dostęp również w innych pakietach
+
+
+
+
 
 /*
     Stwórz klasę typu Samochod. Obiekty typu Samochod mają

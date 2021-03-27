@@ -4,10 +4,9 @@ package rozwiazania.zad34v2;
 public class Car {
 
     //cechy - pola
-    String brand;
-    double mileage;
-    double overviewAt;
-
+   private String brand;
+   private double mileage;
+   private double overviewAt;
 
     //konstruktory
     public Car(String aBrand){
@@ -37,7 +36,17 @@ public class Car {
 
     public double howManyToOverview(){
         return overviewAt - mileage;
-
     }
+
+    //getter - metoda pozwalająca na odczyt pola
+    public String getBrand(){
+        return brand;
+    }
+
+    //setter - metoda pozwalająca na modyfikację pola
+    public void setOverviewAt(double aOverviewAt){
+        overviewAt = aOverviewAt;
+    }
+
 
 }

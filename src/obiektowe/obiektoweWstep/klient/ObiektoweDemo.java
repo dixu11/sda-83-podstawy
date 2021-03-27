@@ -38,8 +38,8 @@ public class ObiektoweDemo {
         klient3.haslo = "asasdsd";
         klient3.punkty = 5;*/
 
-        System.out.println(klient1.mail);
-        System.out.println(klient2.mail);
+        System.out.println(klient1.getMail());
+        System.out.println(klient1.getMail());
 
         klient1.wyswietlDane();
         klient2.wyswietlDane();

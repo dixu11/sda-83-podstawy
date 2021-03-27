@@ -44,8 +44,8 @@ public class ZmienneReferencyjne {
         System.out.println(klient2);
         klient2.wyswietlDane();
 
-        if (klient2.mail != null) { // przykład zabezpieczenia przed nullem
-            System.out.println(klient2.mail.toUpperCase());
+        if (klient2.getMail() != null) { // przykład zabezpieczenia przed nullem
+            System.out.println(klient2.getMail().toUpperCase());
         }
 
 

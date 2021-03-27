@@ -3,9 +3,9 @@ package obiektowe.obiektoweWstep.klient;
 //szablon do tworzenia obiektów klientów
 public class Klient {
     //cechy
-  public  String mail;
-  public  String haslo;
-  public  int punkty;
+  private   String mail;
+  private   String haslo;
+  private   int punkty;
 
     //konstruktory
     public Klient(String startowyMail, String startoweHaslo, int startowePunkty) {
@@ -25,6 +25,10 @@ public class Klient {
 
     public void doliczPunktow(int nowePunkty) {
         punkty += nowePunkty; // zwiekszam ilosc punktow tego klienta
+    }
+
+    public String getMail(){
+        return mail;
     }
 
 }
