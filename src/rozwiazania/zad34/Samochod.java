@@ -1,10 +1,13 @@
 package rozwiazania.zad34;
 
+import obiektowe.serwisy.Produkt;
+
 public class Samochod {
     //cechy
    private String marka;
    private int przebieg;
    private int coIlePrzeglad =20_000;
+
 
     //konstruktory
     public Samochod(String startowaMarka){
