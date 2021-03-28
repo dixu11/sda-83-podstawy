@@ -1,6 +1,8 @@
 package daty;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
@@ -38,14 +40,22 @@ public class DatyWJava {
         System.out.println(actual.format(DateTimeFormatter.ofPattern("dd.MMM.yy"))); // własne formatowanie daty
 
 
-        LocalDate yourDate = readDateToLocalDate();
+       LocalDate yourDate = readDateToLocalDate();
         System.out.println("Twoja data: " + yourDate);
         System.out.println("Dzień roku: " + yourDate.getDayOfYear());
         System.out.println("Dzień tygodnia: " + yourDate.getDayOfWeek());
         LocalDate endOfYear = LocalDate.of(2022,1,1);
         //wyciąganie okresu między 2 datami:
-//        System.out.println("Dni do 1 stycznia: " + yourDate.until(endOfYear));
+      //  System.out.println("Dni do 1 stycznia: " + yourDate.until(endOfYear)); ??
         System.out.println("Dni do 1 stycznia: " + yourDate.until(endOfYear, ChronoUnit.DAYS));
+
+        LocalTime timeNow = LocalTime.now();
+        System.out.println(timeNow);
+
+        LocalDateTime allTimeInfo = LocalDateTime.now();
+        System.out.println(allTimeInfo);
+
+
     }
 
     private static String readDate(){
